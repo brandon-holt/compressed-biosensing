@@ -13,7 +13,7 @@ Genome-scale activity-based profiling of proteases requires identifying substrat
 
 ## How to Use
 1. Download the entire repository.
-2. Generate a 2D array of cleavage kinetics for all protease-substrate combinations. This can include metrics such as (k<sub>cat</sub>, k<sub>cat</sub>/K<sub>m</sub>, V<sub>max</sub>, etc.). Make sure to include all target proteases in your system, as well as every candidate substrate you want to consider adding to your final library. Proteases are in the rows, substrates are in the columns
+2. Obtain a 2D array of cleavage kinetics for all protease-substrate combinations. This can include metrics such as (k<sub>cat</sub>, k<sub>cat</sub>/K<sub>m</sub>, V<sub>max</sub>, etc.). Make sure to include all target proteases in your system, as well as every candidate substrate you want to consider adding to your final library. Proteases are in the rows, substrates are in the columns
 3. Call the [SLICE method](SLICE/SLICE.m) with the appropriate inputs.
 ```matlab
 function [substrates, compression_score] = SLICE(activity_matrix, library_size, activity_thresh, must_test_subs)
